@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid>
+   <ion-row>
+     <ion-col>
+       <h1>General</h1>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-item lines="none">
+        <ion-icon name="language" slot="start"></ion-icon>
+         <ion-label>App Language</ion-label>
+         <ion-select>
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Kannada">Kannada</ion-select-option>
+          <ion-select-option value="Hindi">Hindi</ion-select-option>
+        </ion-select>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-item lines="none">
+        <ion-icon name="notifications" slot="start"></ion-icon>
+        <ion-label>Enable Notifications</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      </ion-col>
+    
+   </ion-row>
+   
+ </ion-grid>
+
+
+</ion-content>

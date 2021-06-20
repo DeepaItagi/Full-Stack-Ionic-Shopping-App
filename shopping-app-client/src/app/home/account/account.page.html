@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item lines="none" class="ion-text-center">
+    <ion-label color="success">Hello, Welcome to Shopping App.</ion-label>
+  </ion-item>
+
+  <ion-card color="light">
+    <div class="img-wrapper">
+      <img src="assets/profile.png" />
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="camera-outline" color="medium">
+        </ion-icon>
+      </ion-button>
+    </div>
+    <ion-card-content class="ion-text-center">
+      <h2>Rina Saira</h2>
+      <ion-text color="medium">
+        <div style="display: flex;" class="ion-justify-content-center">
+          <ion-icon name="location-outline" color="medium">
+          </ion-icon>
+          <p>2345 Street, Delhi, INDIA.</p>
+        </div>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+  
+
+    <ion-row class="ion-text-center">
+      <ion-col class="ion-no-padding">
+        <ion-button  color="primary" routerLink="/home/orders">Your Orders</ion-button>
+      </ion-col>
+    </ion-row>
+    </ion-content>
+
+   
+<ion-footer>
+  <ion-row class="ion-text-center">
+    <ion-col class="ion-no-padding">
+      <ion-button expand="full" color="primary" (click)="logout()">Logout</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

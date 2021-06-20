@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Shopping App</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-sharp" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="mic-sharp" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides pager="true" [options]="{ slidesPerView:1, autoplay: {delay: 2000} }">
+    <ion-slide>
+      <ion-img src="assets/shopping2.jpg" routerLink="/home/tabs/category"></ion-img>
+      <div class="overlay" >
+        <div>UPTO 40% OFF</div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="assets/shopping4.jpeg" routerLink="/home/tabs/category"></ion-img>
+      <div class="overlay" >
+        <div>UPTO 80% OFF</div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="assets/shopping5.jpg" routerLink="/home/tabs/category"></ion-img>
+      <div class="overlay" >
+        <div>UPTO 70% OFF</div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="assets/shopping1.jpg" routerLink="/home/tabs/category"></ion-img>
+      <div class="overlay" >
+        <div>UPTO 50% OFF</div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-item-divider color="light"></ion-item-divider>
+
+ 
+    <ion-img src="assets/shopping6.jpg" routerLink="/home/tabs/category/3" ></ion-img>
+  
+
+  <ion-item-divider color="light">
+    <ion-text color="success">
+      <h3>Deals of the day</h3>
+    </ion-text>
+  </ion-item-divider>
+
+  <ion-slides  [options]="{ slidesPerView:1, autoplay: {delay: 2000} }">
+    <ion-slide  *ngFor="let category of categories">
+     <ion-card class="card">
+      <ion-img src="{{category.photoUrl}}" routerLink="/home/tabs/category/{{category.id}}"></ion-img>
+      <div class="overlay" >
+        <div>UPTO 30% OFF</div>
+        <div>Free Delivery</div>
+      </div>
+    </ion-card>
+    </ion-slide>
+    
+    
+  </ion-slides>
+
+
+  <ion-row>
+  <ion-col>
+    <ion-thumbnail>
+      <ion-img class="img" src="assets/shopping5.jpg" routerLink="/home/tabs/category"></ion-img>
+    </ion-thumbnail>
+  </ion-col>
+  <ion-col>
+    <ion-thumbnail>
+      <ion-img class="img" src="assets/shopping4.jpeg" routerLink="/home/tabs/category"></ion-img>
+    </ion-thumbnail>
+  </ion-col>
+  <ion-col>
+    <ion-thumbnail>
+      <ion-img class="img" src="assets/shopping6.jpg" routerLink="/home/tabs/category"></ion-img>
+    </ion-thumbnail>
+  </ion-col>
+  <ion-col>
+    <ion-thumbnail>
+      <ion-img class="img" src="assets/shopping2.jpg" routerLink="/home/tabs/category"></ion-img>
+    </ion-thumbnail>
+  </ion-col>
+ </ion-row>
+
+ <ion-item  routerLink="/home/tabs/category">
+  <ion-text color="secondary">
+    <p>See More </p>
+  </ion-text>
+   
+ </ion-item>
+
+
+
+</ion-content>

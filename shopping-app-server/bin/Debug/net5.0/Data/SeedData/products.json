@@ -1,0 +1,172 @@
+[
+  {
+    "Name": "OnePlus-nord",
+    "Description": "Built well, comfortable design. Solid battery life.5G-ready processor. 90Hz AMOLED display. ",
+    "ImageUrl": "https://localhost:44338/content/images/mobiles/oneplus-nord.jpg",
+    "Price": 29999,
+    "CategoryId": 1
+  },
+  {
+
+    "Name": "Oppo-f17-pro",
+    "Description": "Ultra Sleek Design, VOOC Flash charge, 16.43cm Dual punch hole. Super AMOLED, 6 AI Portrait Cameras.",
+    "ImageUrl": "https://localhost:44338/content/images/mobiles/oppo-f17-pro-1.jpg",
+    "Price": 12500,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Samsung Galaxy S9",
+    "Description": "64GB 4GB, Li-ion 3000mAh, Fast charging 15W. Iris scanner, Fingerprint, heartrate sensors. Dual Sim.",
+    "ImageUrl": "https://localhost:44338/content/images/mobiles/samsung-galaxy-s9-ice-blue.jpg",
+    "Price": 18000,
+    "CategoryId": 1
+  },
+  {
+
+    "Name": "vivo",
+    "Description": " 6.40 inch, 44MP + 8MP Front and 64MP + 8MP + 2MP Rear Camera. 8GB Ram , 124GB storage, 4000mAh.",
+    "ImageUrl": "https://localhost:44338/content/images/mobiles/vivo.jpg",
+    "Price": 9999,
+    "CategoryId": 1
+  },
+  {
+    "Name": "Boat Rockers Earphone",
+    "Description": "Tangle free cord. Truly wireless communication technology. Sound Isoloation noise control.",
+    "ImageUrl": "https://localhost:44338/content/images/electronics/boat-rockers-earphone.jpg",
+    "Price": 250,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Duracell Battery",
+    "Description": "Upto 100% more power. Best battery, suited for everyday devices with extra performance for high drain devices.",
+    "ImageUrl": "https://localhost:44338/content/images/electronics/duracell-battery.jpg",
+    "Price": 120,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Sony Camera",
+    "Description": "20 Mega Pixel Camera with LCD display. Equipped with sweep panorama, intelligent auto and picture effect. Includes Rechargable battery, Multi USB cable, Wrist strap.",
+    "ImageUrl": "https://localhost:44338/content/images/electronics/sony-camera.jpg",
+    "Price": 14499,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Sony Headphone",
+    "Description": "Dynamic driver unit for clear sound. High energy neodymium magnets deliver sound. Pressure relieving earpads for extended comfort.",
+    "ImageUrl": "https://localhost:44338/content/images/electronics/sony-headphone.png",
+    "Price": 600,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Dry Fruits Mixed Healthy Pack",
+    "Description": "Premium quality, healthy mix of seeds, nuts and berries associated with many health benefits when consumed on a daily basis.",
+    "ImageUrl": "https://localhost:44338/content/images/groceries/dry-fruits-mixed-healthy-pack.jpg",
+    "Price": 300,
+    "CategoryId": 3
+  },
+  {
+    "Name": "Fortune Sunlite Refined Sunflower Oil",
+    "Description": "Light,healthy and nutrititous cooking oil. Rich in vitamins and polyunsaturated fatty acids, it makes food easy to digest.",
+    "ImageUrl": "https://localhost:44338/content/images/groceries/fortune-sunflower-oil.jpg",
+    "Price": 100,
+    "CategoryId": 3
+  },
+  {
+    "Name": "Maggi",
+    "Description": "MAGGI Instant 2- minute noodles with the goodness of Iron.",
+    "ImageUrl": "https://localhost:44338/content/images/groceries/maggi.jpg",
+    "Price": 15,
+    "CategoryId": 3
+  },
+  {
+    "Name": "Tata tea",
+    "Description": "A dust tea made with selected Assam teas to ensure that you get a strong tasting and richly coloured cup of tea.",
+    "ImageUrl": "https://localhost:44338/content/images/groceries/tata-tea.jpg",
+    "Price": 100,
+    "CategoryId": 3
+  },
+  {
+    "Name": "Drools",
+    "Description": "The drools focus, all breed formula for puppies formulated with the finest natural ingredients.",
+    "ImageUrl": "https://localhost:44338/content/images/petfood/drools.jpg",
+    "Price": 80,
+    "CategoryId": 4
+  },
+  {
+    "Name": "Himalaya",
+    "Description": "Complete and balanced nutrition for pets.",
+    "ImageUrl": "https://localhost:44338/content/images/petfood/himalaya.jpg",
+    "Price": 90,
+    "CategoryId": 4
+  },
+  {
+    "Name": "Pedigree",
+    "Description": "Dog food for highly active large breed adult dogs. Rich in Proteins, Omega Fatty acids and antioxidants.",
+    "ImageUrl": "https://localhost:44338/content/images/petfood/pedigree.jpg",
+    "Price": 99,
+    "CategoryId": 4
+  },
+  {
+    "Name": "Simba",
+    "Description": "Easy to eat and digest, tempting aroma and flavour.  Rich in Proteins, Omega Fatty acids and antioxidants. ",
+    "ImageUrl": "https://localhost:44338/content/images/petfood/simba.jpg",
+    "Price": 100,
+    "CategoryId": 4
+  },
+  {
+    "Name": "Haier Microwave",
+    "Description": "Multi Power Level, Auto defrost, Compact body with the capacity of 20 lites. Can be used for reheating, defrosting and cooking.",
+    "ImageUrl": "https://localhost:44338/content/images/homeappliances/haier-microwave.jpg",
+    "Price": 25000,
+    "CategoryId": 5
+  },
+  {
+    "Name": "Lloyd HD LED TV",
+    "Description": "4K Resolution, with Wi Fi connectivity. Supports apps like Alexa, YouTube, Hotstar, Amazon Video.",
+    "ImageUrl": "https://localhost:44338/content/images/homeappliances/lloyd-hd-led-tv.jpg",
+    "Price": 19999,
+    "CategoryId": 5
+  },
+  {
+    "Name": "Orient Ceiling Fan",
+    "Description": "Decorative ceiling fan with a new age design and metallic finish. High speed  motor produces high speed of rotation and ensures better heat dissipation.",
+    "ImageUrl": "https://localhost:44338/content/images/homeappliances/orient-ceiling-fan.jpg",
+    "Price": 5000,
+    "CategoryId": 5
+  },
+  {
+    "Name": "Samsung Fridge",
+    "Description": "Economical and Cooling without fluctuation with the capacity of 192 litres.",
+    "ImageUrl": "https://localhost:44338/content/images/homeappliances/samsung-fridge.jpg",
+    "Price": 19999,
+    "CategoryId": 5
+  },
+  {
+    "Name": "Dettol Handwash",
+    "Description": "Provides protection from a range of germs. Contains more than naturally derived ingredients and plant derived cleansers with the soft fragrance. Dermatologically tested.",
+    "ImageUrl": "https://localhost:44338/content/images/essentials/dettol-handwash.jpg",
+    "Price": 80,
+    "CategoryId": 6
+  },
+  {
+    "Name": "Febreze Air Freshener",
+    "Description": "Long lasting fragrance, that works with a simple push. ",
+    "ImageUrl": "https://localhost:44338/content/images/essentials/febreze-air-freshener-lavender.png",
+    "Price": 90,
+    "CategoryId": 6
+  },
+  {
+    "Name": "N95-Mask",
+    "Description": "Comfortable fit. Soft and lightweight mask. Offers protection against dust, viruses, bacteria and other air borne particles. ",
+    "ImageUrl": "https://localhost:44338/content/images/essentials/n95-facemask.png",
+    "Price": 120,
+    "CategoryId": 6
+  },
+  {
+    "Name": "Sanitizer",
+    "Description": "Protection against 99.9% of germs. Free of harmful chemicals making it safe for everybody to use. ",
+    "ImageUrl": "https://localhost:44338/content/images/essentials/sanitizer.jpg",
+    "Price": 60,
+    "CategoryId": 6
+  }
+]

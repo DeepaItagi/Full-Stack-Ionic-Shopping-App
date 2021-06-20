@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Products</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home/tabs/category"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-sharp" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="mic-sharp" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-grid>
+    <ion-row class="ion-text-center" >
+      <ion-col size="6" *ngFor="let product of products">
+        <ion-img src="{{product.imageUrl}}" routerLink="/home/tabs/category/productdetail/{{product.id}}"></ion-img>
+        <p>{{product.name}}</p>
+        <span class="lineThrough">{{20 + product.price | currency:'INR'}}</span> &nbsp;
+        <span>{{product.price | currency:'INR'}}</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

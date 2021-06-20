@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cart</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item >
+    <ion-label>
+      <div *ngIf="(cart$ | async) === null">
+        Nothing to show. Your Cart is empty.
+      </div>
+      <div>
+        <ion-text color="primary" routerLink="/home/tabs/category">
+          <p style="cursor:pointer">See recommendations here...</p>
+        </ion-text> 
+      </div>
+    </ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>
+      <ion-text color="success">
+        <b>Easy 7 days returns and exchanges</b>
+      </ion-text>
+      <p>Return or exchange for different product within 7 days.</p>
+    </ion-label>
+  </ion-item>
+
+  <div *ngIf="(cart$ | async)">
+
+  <ion-item-divider>
+    <ion-text color="secondary">
+      <h3>Your Cart</h3>
+    </ion-text>
+  </ion-item-divider>
+
+  <div *ngFor="let item of (cart$ | async).items">
+  <ion-card>
+    <ion-row >
+      <ion-col size=4>
+        <ion-img class="img" src="{{item.imageUrl}}"></ion-img>
+      </ion-col>
+      <ion-col size=8>
+        <div>{{item.productName}}</div>
+        <div>{{item.price| currency:'INR'}}</div>
+        
+          Product Quantity:
+         
+          <ion-buttons>
+            <ion-button (click)="incrementItemQuantity(item)">
+              <ion-icon name="add-circle-outline" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-item>{{item.quantity}}</ion-item>
+            <ion-button (click)="decrementItemQuantity(item)">
+              <ion-icon name="remove-circle-outline" slot="icon-only"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-button  color="light" (click)="removeFromCart(item)">Remove from cart</ion-button>
+        
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</div>
+
+</div>
+
+</ion-content>
+<ion-footer *ngIf="(cart$ | async)">
+  <ion-grid >
+    <ion-row>
+      <ion-col  class="ion-no-padding">
+          <div><strong>Subotal:</strong> {{ (cartTotals$ | async).subtotal| currency:'INR' }}</div>
+          <div><strong>Shipping:</strong>{{ (cartTotals$ | async).shipping| currency:'INR' }}</div>
+          <div><strong>Total:</strong> {{ (cartTotals$ | async).total | currency:'INR' }}</div>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-text-center" >
+     
+      <ion-col class="ion-no-padding" >
+        <ion-button  color="secondary" (click)="deleteCart(cart$)">Delete Cart</ion-button>
+      </ion-col>
+    
+      <ion-col  class="ion-no-padding">
+        <ion-button  color="secondary" (click)="createOrder()">Place Order</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-footer>

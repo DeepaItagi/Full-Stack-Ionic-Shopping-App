@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Order Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home/orders"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-card  *ngFor="let orderItem of order">
+      <ion-row >
+        <ion-col size="6" >
+          <ion-row> Product Id : &nbsp; {{orderItem.productItemId}}</ion-row>
+          <ion-row>Product Name : &nbsp; {{orderItem.productName}}</ion-row>
+          <ion-row>Price : &nbsp;  {{orderItem.price}}</ion-row>
+          <ion-row> Quantity : &nbsp;{{orderItem.quantity}}</ion-row>
+          <ion-row> Total :&nbsp;{{orderItem.quantity * orderItem.price}}</ion-row>
+        </ion-col>
+        <ion-col size="6">
+          <ion-img src="{{orderItem.imageUrl}}"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    
+</ion-content>
+

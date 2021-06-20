@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>orders</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button defaultHref="/home/tabs/cart"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngIf="!orders">
+      <ion-col>
+        <ion-item>
+          <ion-label>
+              <ion-text>There are no orders yet.</ion-text>
+          
+              <ion-text color="primary" routerLink="/home/tabs/category">
+                <p style="cursor:pointer">See recommendations here...</p>
+              </ion-text>
+          </ion-label>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <div *ngIf="orders">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-text color="warning">Thank you for shopping with us. Welcome again.</ion-text>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <ion-item-divider>
+      <ion-text color="secondary">
+        <h3>Your Orders</h3></ion-text>
+    </ion-item-divider>
+
+    <ion-row>
+      <ion-col >
+        <ion-card  *ngFor="let order of orders">
+          <ion-text color="secondary" style="cursor:pointer; float:right" routerLink="/home/orders/order-details/{{order.id}}">Click to see details..</ion-text>
+          <div>Order Id :  &nbsp; {{order.id}}</div>
+          <div>Total : &nbsp; {{order.subtotal}}</div>
+          <div>Placed On : &nbsp; {{order.orderDate | date:'mediumDate'}}</div>
+           
+         <p  class="ion-text-center">
+            <ion-button  color="light" (click)="deleteOrder(order.id)">Cancel Order</ion-button>
+         </p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,70 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Shopping App</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/home/tabs/hometab">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Home </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/home/tabs/category">
+            <ion-icon name="grid" slot="start"></ion-icon>
+            <ion-label>Shop by Category</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/home/tabs/cart">
+            <ion-icon name="cart" slot="start"></ion-icon>
+            <ion-label>Your Cart</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/home/tabs/account">
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>Account</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/home/orders">
+            <ion-icon name="list" slot="start"></ion-icon>
+            <ion-label>Your Orders</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/help">
+            <ion-icon name="help-circle" slot="start"></ion-icon>
+            <ion-label>Help</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/faq">
+            <ion-icon name="help" slot="start"></ion-icon>
+            <ion-label>FAQ</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/settings">
+            <ion-icon name="settings" slot="start"></ion-icon>
+            <ion-label>Settings</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
+        
+        <ion-menu-toggle>
+          <ion-item lines="none" button (click)="logout()">
+            <ion-icon name="exit" slot="start"></ion-icon>
+            <ion-label>Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

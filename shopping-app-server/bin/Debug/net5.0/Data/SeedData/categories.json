@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Mobiles",
+    "PhotoUrl": "https://localhost:44338/content/images/categories/mobiles.jpg"
+  },
+  {
+    "Name": "Electronics",
+    "PhotoUrl": "https://localhost:44338/content/images/categories/electronics.jpg"
+  },
+  {
+    "Name": "Groceries",
+    "PhotoUrl": "https://localhost:44338/content/images/categories/groceries.jpg"
+  },
+  {
+    "Name": "PetFood",
+    "PhotoUrl": "https://localhost:44338/content/images/categories/pet-food.png"
+  },
+  {
+    "Name": "HomeAppliances",
+    "PhotoUrl": "https://localhost:44338/content/images/categories/appliances.jpg"
+  },
+  {
+    "Name": "Essentials",
+    "PhotoUrl": "https://localhost:44338/content/images/categories/essentials.jpg"
+  }
+]
